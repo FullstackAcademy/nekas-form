@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title">Neka's Coolest Quiz Ever</h1>
+    <p id="description">If you know what's up, you'll take this quiz.</p>
+    <form id="survey-form">
+
+      <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" placeholder="Azul The Dog" required>
+      
+      <label id="email-label" for="email">Email</label>
+      <input id="email" type="email" placeholder="azulthedog@dog.dog" required>
+
+      <label id="number-label" for="number">Number</label>
+      <input id="number" type="number" max="10" min="5" placeholder="7">
+
+      <label id="dropdown-label" for="dropdown">Choose a pet:</label>
+      <select id="dropdown">
+          <option value="">--Please choose an option--</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="hamster">Hamster</option>
+          <option value="parrot">Parrot</option>
+          <option value="spider">Spider</option>
+          <option value="goldfish">Goldfish</option>
+      </select>
+
+      <p>How are you feeling?</p>
+      <input id="good" type="radio" name="feeling" value="good">
+      <label for="good">Good</label>
+      <input id="bad" type="radio" name="feeling" value="bad">
+      <label for="bad">Bad</label>
+
+
+      <p>Clothing?</p>
+      <input id="good-checkbox" class="checkbox" type="checkbox" name="feeling" value="good">
+      <label for="good-checkbox">Good</label>
+      <input id="fine-checkbox" class="checkbox" type="checkbox" name="feeling" value="fine">
+      <label for="fine-checkbox">Fine</label>
+      <input id="bad-checkbox" class="checkbox" type="checkbox" name="feeling" value="bad">
+      <label for="bad-checkbox">Bad</label>
+      <input id="terrible" class="checkbox" type="checkbox" name="feeling" value="terrible">
+      <label for="terrible">Terrible</label>
+
+      <p>Select this, if you like this form</p>
+      <input id="liked-it" class="checkbox" type="checkbox" name="liked">
+      <label for="liked-it">I liked it</label>
+<br>
+      <label for="story">Tell us your story:</label>
+      <textarea id="story" name="story"
+                rows="5" cols="33">
+      It was a dark and stormy night...
+      </textarea>
+
+      <button form="survey-form" id="submit" type="submit">Submit</button>
+
+    </form>
+	<script src="index.js"></script>
+  </body>
+</html>
